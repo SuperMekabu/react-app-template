@@ -8,6 +8,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
     "prettier"
   ],
   "parserOptions": {
@@ -15,9 +16,12 @@
   },
   "plugins": [
     "import",
-    "unused-imports"
+    "unused-imports","react", "react-hooks"
   ],
   "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "import/no-default-export": "error",
     "@typescript-eslint/no-unused-vars": "off",
     "import/order": [
       "error",

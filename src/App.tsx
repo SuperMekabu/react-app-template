@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 
 import './App.css';
-import Index from '@routes/index';
+import { Index } from '@routes/index';
 import { SomeContent } from '@routes/index/SomContent';
-import Other from '@routes/other';
+import { Other } from '@routes/other';
 import { OtherContent } from '@routes/other/OtherContent';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
   );
 }
 
-export function AppWrapper() {
+export function Router() {
   return (
     <BrowserRouter>
       <Routes>

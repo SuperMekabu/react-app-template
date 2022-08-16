@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
-export default function () {
+export const Other = () => {
   return (
     <div>
       <div style={{ padding: 8 }}>
