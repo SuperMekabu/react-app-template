@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "eng:dev": "cross-env NODE_ENV=development",
+    "env:dev": "cross-env NODE_ENV=development",
     "prebuild": "yarn install",
     "build": "vite build",
     "prestart": "yarn install",
-    "start": "yarn eng:dev vite",
+    "start": "yarn env:dev vite",
     "lint": "eslint src --ext js,jsx,ts,tsx --fix"
   },
   "dependencies": {
